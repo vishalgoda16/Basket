@@ -38,3 +38,33 @@ class Basket:
         for k,i in self.__product.items():
             total += int(i['quantity'])*int(i['price'])*getExchangeRate()
         return total
+    
+    basket = Basket()
+
+    basket.addProduct('Component',3,'bag','walmart',223,'EUR')
+
+    basket.getBalance('Component')
+
+    basket.addProduct('collection',5,'toys','walmart',122,'EUR')
+
+    basket.addProduct('bundle',3,'package','walmart',22,'EUR')
+
+    basket.getProductList()
+
+    basket.getBalance('Component')
+
+    basket.addProduct('Component',6,'bat','walmart',22,'EUR')
+
+    basket.getBalance('Component')
+
+    basket.getProductList()
+
+    basket.addProduct('Component',6,'sss','walmart',2,'EUR')
+
+    basket.getProductList()
+
+    basket.value()
+
+    getExchangeRate()
+
+    # https://github.com/vishalgoda16/Basket.git --> Repo link
